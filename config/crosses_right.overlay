@@ -1,4 +1,4 @@
 &trackball_central {
-    invert-x;
-    /delete-property/ invert-y;
+    /delete-property/ invert-x;
+    invert-y;
 };
