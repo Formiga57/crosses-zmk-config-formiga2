@@ -11,7 +11,7 @@
         compatible = "zmk,input-processor-scroll-inertia";
         #input-processor-cells = <0>;
         axis      = <1>;        /* 1 = vertical */
-        layer     = <4>;        /* a camada de scroll que a gente vai criar */
+        layer     = <4>;        /* a camada de scroll */
         scale     = <4>;
         scale-div = <675>;
         swap-mod  = <(MOD_LSFT|MOD_RSFT)>;  /* segura Shift = scroll horizontal */
