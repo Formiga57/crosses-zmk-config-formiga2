@@ -1,3 +1,6 @@
+manifest:
+  defaults:
+    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -17,3 +20,5 @@
     - name: zmk-input-processor-scroll-inertia
       remote: mjmjm0101
       revision: main
+  self:
+    path: config
