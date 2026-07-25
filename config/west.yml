@@ -1,11 +1,10 @@
-manifest:
-  defaults:
-    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: Good-Great-Grand-Wonderful
       url-base: https://github.com/Good-Great-Grand-Wonderful
+    - name: mjmjm0101
+      url-base: https://github.com/mjmjm0101
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,5 +14,6 @@ manifest:
       remote: Good-Great-Grand-Wonderful
       revision: 60b3279311276be76b26bfed71739bbc2a78e026
       import: config/west.yml
-  self:
-    path: config
+    - name: zmk-input-processor-scroll-inertia
+      remote: mjmjm0101
+      revision: main
