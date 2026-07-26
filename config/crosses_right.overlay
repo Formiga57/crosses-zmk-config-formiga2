@@ -14,7 +14,12 @@
         layer     = <4>;        /* a camada de scroll */
         scale     = <1>;        /* casa com o zip_scroll_scaler abaixo */
         scale-div = <4>;
-        stop      = <1>;        /* cutoff ~31Hz na escala 1/4, tail suave */
+
+        /* --- arme facil: inercia dispara com flick suave --- */
+        start     = <12>;       /* default 40 -> quanto menor, mais facil arma */
+        move      = <24>;       /* default 80 */
+
+        stop      = <1>;
         swap-mod  = <(MOD_LSFT|MOD_RSFT)>;  /* segura Shift = scroll horizontal */
     };
 };
@@ -22,7 +27,7 @@
 &trackball_central_listener {
     scroller_v {
         layers = <4>;
-        input-processors = <
+        input-processors = 
             &zip_y_scaler (-1) 1
             &zip_xy_to_scroll_mapper
             &scroll_inertia_v
