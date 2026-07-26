@@ -22,7 +22,7 @@
         compatible = "zmk,keymap";
         default_layer {
             display-name = "Base";
-            bindings = 
+            bindings = <
                 &kp TILDE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp GRAVE
                 &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U   &kp I      &kp O    &kp P     &kp BSPC
                 &kp LSHFT &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
@@ -32,7 +32,7 @@
         };
         lower_layer {
             display-name = "Lower";
-            bindings = 
+            bindings = <
                 &kp TILDE  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8  &kp N9    &kp N0  &kp GRAVE
                 &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8  &kp N9    &kp N0  &kp BSPC
                 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans  &ext_power EP_TOG
@@ -42,7 +42,7 @@
         };
         raise_layer {
             display-name = "Raise";
-            bindings = 
+            bindings = <
                 &kp TILDE  &kp N1   &kp N2 &kp N3   &kp N4   &kp N5      &kp N6    &kp N7    &kp N8          &kp N9   &kp N0   &kp GRAVE
                 &kp TAB    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
                 &kp LCTRL  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
@@ -52,7 +52,7 @@
         };
         mouse_layer {
             display-name = "Mouse";
-            bindings = 
+            bindings = <
                 &trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &studio_unlock
                 &trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans     &mkp RCLK  &mo 4      &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -62,7 +62,7 @@
         };
         scroll_layer {
             display-name = "Scroll";
-            bindings = 
+            bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
